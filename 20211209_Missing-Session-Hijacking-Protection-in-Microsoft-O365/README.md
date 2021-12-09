@@ -16,15 +16,15 @@ SIX simulated a session hijacking attack on Outlook 365 to test O365’s resilie
 
 First, SIX successfully logged into the Outlook 365 web application via an Intune-managed device. The successful login is documented in Figure 1.
 
-![Figure 1 : Successful login to outlook.office.com.](/assets/images/figure_1.png)
+![Figure 1 : Successful login to outlook.office.com.](https://github.com/sixgroup-security/Advisories/blob/main/20211209_Missing-Session-Hijacking-Protection-in-Microsoft-O365/figure_1.png)
 
 Afterwards, the session cookies listed in Figure 1 were transferred to a second third-party non-Intune managed device. The import process on this second device is documented in Figure 2.
 
-![Figure 2 : SIX imported the cookies of Figure 1 into a web browser on another non-Intune-managed device.](/assets/images/figure_2.png)
+![Figure 2 : SIX imported the cookies of Figure 1 into a web browser on another non-Intune-managed device.](https://github.com/sixgroup-security/Advisories/blob/main/20211209_Missing-Session-Hijacking-Protection-in-Microsoft-O365/figure_2.png)
 
 After the import, the web application was refreshed and as depicted in Figure 3, access to the user’s Outlook 365 account was possible from this second device. Thereby, SIX could read as well as send emails. Note that the user agent strings as well as the public IP addresses differ between the original Intune-managed (see Figure 1) and the third party non-Intune-managed (see Figure 3) device.
 
-![Figure 3: Solen session information can be re-used on third-party devices.](/assets/images/figure_3.png)
+![Figure 3: Solen session information can be re-used on third-party devices.](https://github.com/sixgroup-security/Advisories/blob/main/20211209_Missing-Session-Hijacking-Protection-in-Microsoft-O365/figure_3.png)
 
 Finally, SIX refreshed the Outlook 365 page on the Intune-managed device and afterwards on the non-Intune-managed device to determine if the simultaneous usage triggers a session invalidation. Thereby, the session on the non-Intune-managed device remained valid.
 
