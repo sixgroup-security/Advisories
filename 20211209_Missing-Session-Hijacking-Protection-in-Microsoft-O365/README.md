@@ -53,4 +53,4 @@ A session invalidation due to the above conditions should also trigger an alert 
 | 06.12.2021 | Mandiant published the article “[Suspected Russian Activity Targeting Government and Business Entities Around the Globe](https://www.mandiant.com/resources/russian-targeting-gov-business)” , which confirms that cookie theft attacks are already actively executed on Microsoft 365 environment. |
 | 06.12.2021 | SIX resubmitted this vulnerability to Microsoft. |
 | 07.12.2021 | Microsoft responded and did not recognize the vulnerability stating “*this appears to be working as expected for this functionality and this case would be closed out for security tracking*”. |
-| 07.12.2021 | SIX decides to publish the vulnerability report as Microsoft has no intention to work on this. |
+| 16.12.2021 | SIX decides to publish the vulnerability report as Microsoft has no intention to work on this. |
