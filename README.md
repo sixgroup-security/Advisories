@@ -2,6 +2,13 @@
 
 Below you can find a list of advisories found & published 
 
+## 2022
+
+### Microsoft Power Automate
+
+* ``17.11.2022`` [Potential Data Leakage in Microsoft Power Automate](https://github.com/sixgroup-security/Advisories/blob/main/20221117_Potential-Data-Leakage-in-Microsoft-Power-Automate/README.md)
+* ``MSRC Case still open`` Missing Logging for Shared Access Signatures
+
 ## 2021
 
 ### Microsoft O365
